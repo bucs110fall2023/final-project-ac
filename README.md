@@ -6,7 +6,7 @@
 
 ## Team Members
 
-Charlie, Adriana
+Chelsea, Adriana
 
 *** 
 
