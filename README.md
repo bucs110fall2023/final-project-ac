@@ -34,7 +34,7 @@ It is a quiz based on silly BuzzFeed quizzes. It's a personality quiz based on p
 1. Next Arrow
 2. Start Screen
 3. Results Page
-4. Animated Backgound
+4. Animated Background
 5. Loading Screen
 
 ### Classes
