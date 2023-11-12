@@ -6,7 +6,7 @@
 
 ## Team Members
 
-Chelsea, Adriana
+Chelsea Oliveira, Adriana Mavila
 
 *** 
 
