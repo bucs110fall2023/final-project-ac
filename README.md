@@ -13,7 +13,7 @@ Chelsea Oliveira, Adriana Mavila
 
 ## Project Description
 
-A quiz based off the silly buzzfeed quizzes you see all the time. It's a personality quiz based off personal choices/interests and you have to choose which option you prefer the most. The screen will change to the next with the help of an arrow key or a next button at the bottom of the screen when pressed, all the options will be functional, and the users choices are tallied and results are given at the end.
+It is a quiz based on silly BuzzFeed quizzes. It's a personality quiz based on personal choices/interests and you must choose which option you prefer the most. The screen will change to the next with the help of an arrow key or a next button at the bottom of the screen when pressed, all the options will be functional, the user's choices are tallied and results will be given at the end.
 
 ***
 
