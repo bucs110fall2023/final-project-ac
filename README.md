@@ -38,8 +38,9 @@ It is a quiz based on silly BuzzFeed quizzes. It's a personality quiz based on p
 5. Loading Screen
 
 ### Classes
-- 
-- << You should have a list of each of your classes with a description >>
+- class Question: represents singular quiz questions and contains attributes to form the texts for questions and answer choices.
+- class Quiz: represents a set of questions and contains a method to add new questions and run the quiz.
+-  run_quiz: a method that asks the player each question, takes the user's input, and adds up their total score.
 
 ## ATP
 
