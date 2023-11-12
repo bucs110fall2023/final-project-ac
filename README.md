@@ -31,11 +31,11 @@ A quiz based off the silly buzzfeed quizzes you see all the time. It's a persona
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. Next Arrow
+2. Start Screen
+3. Results Page
+4. Animated Backgound
+5. Loading Screen
 
 ### Classes
 
