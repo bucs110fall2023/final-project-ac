@@ -12,8 +12,6 @@ def main():
 	pygame.display.set_caption("Snow Simulation")
 	clock = pygame.time.Clock()
 
-	trees_back = pygame.image.load('trees_back.jpg').convert_alpha()
-	trees_front = pygame.image.load('trees_front.png').convert_alpha()
 
 	
 	snowflakes = []
@@ -29,14 +27,12 @@ def main():
 				pygame.quit()
 				exit()
 
-		screen.blit(trees_back, (0, 0))		
-		
+	
 		
 		for snowflake in snowflakes:
 			pygame.draw.circle(screen, snowflake.color, snowflake.pos, snowflake.radius)
 			snowflake.controller(height, width)
 
-		screen.blit(trees_front, (0, 0))	
 
 		pygame.display.update()
 		clock.tick(30)
