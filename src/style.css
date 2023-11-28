@@ -1,7 +1,7 @@
 /* STYLE SECTIONING TAGS */
 
 body {
-    background-color: #592941ff;
+    background-color:#5C0000;
     font-family: "Raleway", sans-serif;
     margin: 2em;
   }
@@ -10,17 +10,17 @@ body {
   h1 {
     text-align: center;
     font-style: italic;
-    color: #b98368ff;
+    color: #ECFFEB;
   }
   p{
-    color: #b98368ff;
+    color: #ECFFEB;
     font-family:"Roboto Mono", monospace;
   }
   
   
   main{
     text-align: center;
-    color: #6cbc95ff;
+    color: #005C00;
     font-family: "Raleway",sans-serif;
   }
   
@@ -52,7 +52,7 @@ body {
   /* STYLE BUTTON */
   button { 
     font-family:"Roboto Mono", monospace;
-    color: #296a5aff;
+    color: #005C00;
     
     margin-top: 5px;
   }
