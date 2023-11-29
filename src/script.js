@@ -1,4 +1,3 @@
-
  var OpennessScore = 0; // Store the Openness score
  var ConscientiousnessScore = 0; // Store the Conscientiousness score
  var ExtroversionScore = 0 ; // Store the Extroversion score
@@ -234,7 +233,7 @@
     } if (AgreeablenessScore >= 4) {
         result.innerHTML = "Your personality is: The Problem Solver!";
         console.log("Your personality is: The Problem Solver!")
-    } elif (NeuroticismScore >= 4); {
+    } else if (NeuroticismScore >= 4); {
         result.innerHTML = "Your personality is: The Expressionist!";
         console.log("Your personality is: The Expressionist!")
         }
