@@ -22,25 +22,25 @@ Test Case 3: Quiz Use
     3. Observe if there is one image present per option.
     4. Play through all fifteen questions until the end.
     5. Repeat steps until all answer choices have been selected at least once.
-- Expected Outcome: All the answer choices should be able to be chosen and there should be an image for every choice.
+- Expected Outcome: All the answer choices should be selectable and there should be an image for every choice.
 
 Test Case 4: Results Handling
 - Test Description: Ensures that the program is keeping track of a user's choices and tallies them up to return one of five messages depending on their choices.
 - Test Steps:
     1. Select 'Quiz Page' link on the start page menu.
-    2. Play through the entire quiz, selecting one answer choice per question, and not skipping any.
-    3. Select the 'Go to the Result's Page' when finished.
+    2. Play through the entire quiz, selecting one answer choice per question without skipping any.
+    3. Select the 'Go to the Result's Page' link when finished.
     4. Wait through the loading screen for the results.
     5. Observe if the result screen has a title other than "RESULT".
 - Expected Outcome: After finishing the quiz, the results screen displays an outcome starting with "Your Personality Is: " and NOT just "RESULT", which is just filler.
 
 Test Case 5: Quiz Restart Condition
-- Test Description:
+- Test Description: Ensure that the user is able to restart the quiz and return to the first question after receiving their result.
 - Test Steps:
     1. Select 'Quiz Page' link on the start page menu.
     2. Play through the entire quiz, selecting one answer choice per question.
     3. Go to results page after last question.
-    4. Click 'restart!'
+    4. Click 'Restart!'
 - Expected Outcome: After receiving the quiz results, the user should be able to restart the quiz and return to the first question by pressing the 'Restart!' button.
 
 Test Case 6: Loading Screen
