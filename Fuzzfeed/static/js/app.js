@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Store the question sections and the next button
 const questionSections = document.querySelectorAll('.question-section');
 const nextButton = document.getElementById('next-btn');
@@ -33,4 +34,17 @@ nextButton.addEventListener('click', () => {
 });
 
 
+=======
+const container = document.querySelector('.snowflakes');
+
+for (var i = 0; i < 100; i++) {
+    let snowDiv = document.createElement("div");
+    snowDiv.classList.add("snow");
+    snowDiv.style.animation = `snowfall ${Math.floor(Math.random() * 10) + 5}s ${Math.floor(Math.random() * 10)}s linear infinite`;
+    snowDiv.style.left = `${Math.floor(Math.random() * 100)}%`;
+
+    container.appendChild(snowDiv); 
+}
+
+>>>>>>> 52b1826309dda8f1a9171352413668a84ef2fe2c
 
