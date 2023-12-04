@@ -12,6 +12,85 @@
 
 	</script>
 <style>
+h1  {
+        text-align: center;
+        font-style: italic;
+        color: #ECFFEB;
+    }
+
+body {
+          font-family: Arial, sans-serif;
+          background-color: #5C0000;
+      }
+
+      header {
+          background-color: #005C00;
+          color: white;
+          padding: 10px;
+          text-align: center;
+      }
+
+      p{
+        color: #ECFFEB;
+      }
+
+      main {
+          margin: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: "raleway", sans-serif;
+        font-style: italic;
+        color:#ECFFEB;
+        margin-top: 2em; 
+      }
+
+      h2 {
+            color: white; /* Change this to the desired color value */
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: green; /* Change this to the desired color value */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+img {
+    width: 130px; 
+    height: 100px;
+}
+
+.question {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .answer-choice {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  button { 
+  font-family:"Roboto Mono", monospace;
+  color: #005C00;
+  
+  margin-top: 5px;
+  }
+
+</style>
+</head>
+<style>
   /* Add this style to set a consistent width and height for images */
   img {
       width: 100px; /* Adjust the width as needed */
@@ -27,8 +106,22 @@
 
     /* Add this style to control the width of answer choices */
     .answer-choice {
-      width: 30%; /* Adjust the width as needed */
-      margin-bottom: 20px; /* Adjust the margin as needed */
+      width: 30%;
+      margin-bottom: 20px;
+    }
+
+    button { 
+    text-align: center;
+    font-family:"Roboto Mono", monospace;
+    color: #005C00;
+    margin-top: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
     }
 </style>
 </head>
@@ -76,23 +169,6 @@
           </div>
     
         </div> 
-        <style>
-            /* Remove list-style from the unordered list */
-            ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-            }
-    
-            header {
-                text-align: center;
-            }
-        
-            /* Optional: If you want to remove the default link styles */
-            li {
-                text-decoration: none;
-            }
-        </style>
         <nav>
             <ul>
               <li>
