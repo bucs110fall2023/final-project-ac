@@ -8,28 +8,125 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="/style.css">
-	<script src="/script.js" defer>
-
-	</script>
+	<script src="/script.js" defer></script>
 <style>
-  /* Add this style to set a consistent width and height for images */
+  
+  h1  {
+          text-align: center;
+          font-style: italic;
+          color: #ECFFEB;
+      }
+
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #5C0000;
+        }
+
+        header {
+            background-color: #005C00;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        p{
+          color: #ECFFEB;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        h2 {
+          text-align: center;
+          font-family: "raleway", sans-serif;
+          font-style: italic;
+          color:#ECFFEB;
+          margin-top: 2em; 
+        }
+
+        h2 {
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: white; /* Change this to the desired color value */
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: green; /* Change this to the desired color value */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
   img {
-      width: 100px; /* Adjust the width as needed */
-      height: 100px; /* Adjust the height as needed */
+      width: 100px; 
+      height: 100px; 
   }
 
-  /* Add this style to create a grid layout for answer choices */
+ 
   .question {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
 
-    /* Add this style to control the width of answer choices */
+   
     .answer-choice {
-      width: 30%; /* Adjust the width as needed */
-      margin-bottom: 20px; /* Adjust the margin as needed */
+      width: 30%;
+      margin-bottom: 20px;
     }
+
+    button { 
+    text-align: center;
+    font-family:"Roboto Mono", monospace;
+    color: #005C00;
+    margin-top: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #27A300; /* Change this to the desired color */
+        color: #fff; /* Change this to the desired text color */
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease; /* Optional: Add a smooth transition effect */
+    }
+
+    .button:hover {
+        background-color: #27A300; /* Change this to the desired color on hover */
+    }
+
 </style>
 </head>
 
@@ -37,7 +134,7 @@
 
 	<header>
 		<h1>AC's Personality Quiz!</h1>
-    <a href="startpage.html">Return Home</a>
+    <a href="startpage.html" class="button">Back to Homepage</a>
 		<p>Answer the questions to determine your Personality!</p>
 	</header>
 
@@ -78,7 +175,6 @@
 
     </div> 
         <style>
-            /* Remove list-style from the unordered list */
             ul {
                 list-style-type: none;
                 padding: 0;
@@ -89,7 +185,7 @@
                 text-align: center;
             }
         
-            /* Optional: If you want to remove the default link styles */
+
             li {
                 text-decoration: none;
             }

@@ -5,16 +5,15 @@ import logging
 app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
-# Route to serve the HTML page
+
 @app.route('/')
 def index():
     return render_template('startpage.html')
 
-# Route to serve static files (CSS, JS, images)
-@app.route('/questionone')
-def question_one():
-    #src_folder = os.path.join(os.getcwd(), 'template')
-    return render_template('templates/questionone.html')
+
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    return send_from_directory('static', filename)
 
 if __name__ == '__main__':
     app.run(debug=True)
