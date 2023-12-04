@@ -1,6 +1,9 @@
 from flask import Flask, render_template, send_from_directory
+import os
+import logging
 
 app = Flask(__name__)
+logging.basicConfig(level=logging.DEBUG)
 
 
 @app.route('/')
