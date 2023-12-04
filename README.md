@@ -96,5 +96,3 @@ Test Case 6: Loading Screen
     3. Go to results page after last question.
     4. Observe if there is a loading screen that turns in a circle with the text "Loading..." above it.
 - Expected Outcome: The loading screen turns for five seconds before releasing the quiz results. The centered text displaying "Loading..." is above it.
-
-
