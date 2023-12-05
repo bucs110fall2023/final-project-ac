@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> AC's Personality Quiz! </title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="fuzzfeed/static/style.css">
+	<script src="fuzzfeed/static/script.js" defer>
+
+	</script>
+<style>
+  /* Add this style to set a consistent width and height for images */
+  img {
+      width: 100px; /* Adjust the width as needed */
+      height: 100px; /* Adjust the height as needed */
+  }
+
+  /* Add this style to create a grid layout for answer choices */
+  .question {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    /* Add this style to control the width of answer choices */
+    .answer-choice {
+      width: 30%; /* Adjust the width as needed */
+      margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+</style>
+</head>
+
+<body>
+
+	<header>
+		<h1>AC's Personality Quiz!</h1>
+    <a href="fuzzfeed/templates/startpage.html">Return Home</a>
+		<p>Answer the questions to determine your Personality!</p>
+	</header>
+
+	<main>
+        <h2>4. What’s your favorite climate?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="fuzzfeed/static/images/dry.jpeg" alt="description here">
+        <br>
+        <button id="q4a1">Dry</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="fuzzfeed/static/images/tropical.jpeg" alt="description here">
+        <br>
+        <button id="q4a2">Tropical</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="fuzzfeed/static/images/temperate.jpeg" alt="description here">
+        <br>
+        <button id="q4a3">Temperate</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="fuzzfeed/static/images/continental.jpeg" alt="description here">
+        <br>
+        <button id="q4a4">Continental</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="fuzzfeed/static/images/polar.jpeg" alt="description here">
+        <br>
+        <button id="q4a5">Polar</button>
+      </div>
+
+    </div> 
+        <style>
+            /* Remove list-style from the unordered list */
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+    
+            header {
+                text-align: center;
+            }
+        
+            /* Optional: If you want to remove the default link styles */
+            li {
+                text-decoration: none;
+            }
+        </style>
+        <nav>
+            <ul>
+              <li>
+                <a href="fuzzfeed/templates/questionfive.html">Next -></a>
+              </li>
+            </ul>
+          </nav>
+    </main>

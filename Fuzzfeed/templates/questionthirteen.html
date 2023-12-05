@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-	<title> AC's Personality Quiz! </title>
+	<title> Fuzzfeed Personality Quiz </title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="/style.css">
-	<script src="/runsquiz.js" defer></script>
+	<link rel="stylesheet" href="fuzzfeed/static/style.css">
+	<script src="fuzzfeed/static/script.js" defer>
+
+	</script>
 <style>
- 
- h1  {
+
+h1  {
           text-align: center;
           font-style: italic;
           color: #ECFFEB;
@@ -64,28 +66,27 @@
         }
 
         h2 {
-            color: white; /* Change this to the desired color value */
+            color: white;
         }
 
         nav {
             text-align: center;
-            margin-top: 20px; /* Adjust the margin as needed */
+            margin-top: 20px;
         }
 
         nav a {
             display: inline-block;
             padding: 10px 20px;
-            background-color: green; /* Change this to the desired color value */
+            background-color: green;
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }
 
   img {
-      width: 100px; 
+      width: 130px;
       height: 100px;
   }
-
 
   .question {
       display: flex;
@@ -133,43 +134,43 @@
 
 	<header>
 		<h1>AC's Personality Quiz!</h1>
-    <a href="startpage.html" class="button">Back to Homepage</a>
+    <a href="fuzzfeed/templates/startpage.html">Return Home</a>
 		<p>Answer the questions to determine your Personality!</p>
 	</header>
 
 	<main>
-        <h2>12. Favorite movie/book genre?</h2>
+        <h2>13. You see a homeless person on the street, what do you do?</h2>
         <div class="question">
     
           <div class="answer-choice">
-            <img src="myestery.jpeg" alt="description here">
+            <img src="fuzzfeed/static/images/walking.jpeg" alt="description here">
             <br>
-            <button id="q12a1">Mystery</button>
+            <button id="q13a1">Just walk past</button>
           </div>
     
           <div class="answer-choice">
-            <img src="comedy.jpeg" alt="description here">
+            <img src="fuzzfeed/static/images/change.jpeg" alt="description here">
             <br>
-            <button id="q12a2">Comedy</button>
+            <button id="q13a2">Give them spare change</button>
           </div>
     
           <div class="answer-choice">
-            <img src="romance.jpeg" alt="description here">
+            <img src="fuzzfeed/static/images/looking.jpeg" alt="description here">
             <br>
-            <button id="q12a3">Romance</button>
+            <button id="q13a3">Look at them menacingly(??)</button>
           </div>
     
           <div class="answer-choice">
-            <img src="action.jpeg" alt="description here">
+            <img src="fuzzfeed/static/images/buying.jpeg/" alt="description here">
             <br>
-            <button id="q12a4">Action</button>
+            <button id="q13a4">Buy them a good meal</button>
           </div>
     
           <div class="answer-choice">
-            <img src="horror.jpeg" alt="description here">
+            <img src="fuzzfeed/static/images/home.jpeg" alt="description here">
             <br>
-            <button id="q12a5">Horror</button>
-          </div>    
+            <button id="q13a5">I don't go outside.</button>
+          </div>
 
     </div> 
         <style>
@@ -182,7 +183,7 @@
             header {
                 text-align: center;
             }
-      
+
             li {
                 text-decoration: none;
             }
@@ -190,7 +191,7 @@
         <nav>
             <ul>
               <li>
-                <a href="questionthirteen.html">Next -></a>
+                <a href="fuzzfeed/templates/questionfourteen.html">Next -></a>
               </li>
             </ul>
           </nav>
