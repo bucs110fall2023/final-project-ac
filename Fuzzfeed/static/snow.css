@@ -1,22 +1,30 @@
-
-/* Create a snowfall animation */
-.snowfall {
-    pointer-events: none; /* Prevents the snowfall from interfering with click events */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999; /* Ensure it's above other content */
-    background-image: url('/static/images/snowflakes.png'); /* Replace with your snowflake image */
-    animation: snowfall 10s linear infinite; /* Customize animation properties */
+body{
+    margin: 0;
+}
+.wrapper {
+    width:100vw;
+    height:100vh;
+    background: radial-gradient(farthest-corner at 30vw 20vh, #7397a1 1%, #3f2c41 100%);
 }
 
-@keyframes snowfall {
-    from {
-        transform: translateY(-100vh); /* Start above the viewport */
-    }
-    to {
-        transform: translateY(100vh); /* End below the viewport */
-    }
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    opacity: 0.9;
+    height: 60px;
+    left: 0px;
+    font-size: 26px;
+    text-align: center;
+    color: #ffffff;
+    background: url("logo_small.png") #646464 20px no-repeat;
+    background-size: 50px
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+
+}
+
+.navbar span{
+    position: relative;
+    top: 15px;
 }
