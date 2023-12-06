@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     z-index: 9999; /* Ensure it's above other content */
-    background-image: url('/static/snowflake.png'); /* Replace with your snowflake image */
+    background-image: url('/static/images/snowflakes.png'); /* Replace with your snowflake image */
     animation: snowfall 10s linear infinite; /* Customize animation properties */
 }
 
