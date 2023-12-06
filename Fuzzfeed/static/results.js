@@ -195,7 +195,7 @@
    //listen for click on restart button and call function if clicked
  restart.addEventListener("click", restartQuiz);
  
- //track Openness score and see if quiz is complete
+ //track Openness score and see ifc quiz is complete
  function Openness() {
     OpennessScore += 1;
     questionCount += 1;
