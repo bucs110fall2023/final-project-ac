@@ -1,9 +1,9 @@
- var OpennessScore = 0; 
- var ConscientiousnessScore = 0; 
- var ExtroversionScore = 0 ; 
- var AgreeablenessScore = 0; 
- var NeuroticismScore = 0 ; 
- var questionCount = 0; 
+ var OpennessScore = 0; // Store the Openness score
+ var ConscientiousnessScore = 0; // Store the Conscientiousness score
+ var ExtroversionScore = 0 ; // Store the Extroversion score
+ var AgreeablenessScore = 0; // Store the Agreeableness score
+ var NeuroticismScore = 0 ; // Store the Neuroticism score
+ var questionCount = 0; //store the number of questions clicked on
  
  ///////prof////////
 var next = document.querySelector('nav.ul.li.a')
@@ -160,14 +160,14 @@ next.addEventListener('click', (e) => {
    //listen for click on restart button and call function if clicked
  restart.addEventListener("click", restartQuiz);
  
- //track Openness score and see if quiz is complete
+ //track Openness score and see ifc quiz is complete
  function Openness() {
     OpennessScore += 1;
     questionCount += 1;
  
    console.log("questionCount = " + questionCount + "\t" + "OpennessScore = " + OpennessScore); 
  
- if (questionCount == 3) { //PART 5
+ if (questionCount == 3) {
    console.log("The quiz is done!") 
  updateResult();
    }
@@ -195,7 +195,7 @@ next.addEventListener('click', (e) => {
   
     console.log("questionCount = " + questionCount + "\t" + "ExtroversionScore = " + ExtroversionScore); 
   
-  if (questionCount == 3) { //PART 5
+  if (questionCount == 3) {
     console.log("The quiz is done!") 
   updateResult();
     }
@@ -209,7 +209,7 @@ next.addEventListener('click', (e) => {
   
     console.log("questionCount = " + questionCount + "\t" + "AgreeablenessScore = " + AgreeablenessScore); 
   
-  if (questionCount == 3) { //PART 5
+  if (questionCount == 3) {
     console.log("The quiz is done!") 
   updateResult();
     }
@@ -223,7 +223,7 @@ next.addEventListener('click', (e) => {
   
     console.log("questionCount = " + questionCount + "\t" + "NeuroticismScore = " + NeuroticismScore); 
   
-  if (questionCount == 3) { //PART 5
+  if (questionCount == 3) {
     console.log("The quiz is done!") 
   updateResult();
     }
