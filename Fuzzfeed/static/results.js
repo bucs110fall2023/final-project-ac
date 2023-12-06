@@ -224,16 +224,16 @@
    if (OpennessScore >= 4) {
      result.innerHTML = "Your personality is: The Detective!";
      console.log("Your personality is: The Detective!")
-   } if (ConscientiousnessScore >= 4) {
+   } else if (ConscientiousnessScore >= 4) {
      result.innerHTML = "Your personality is: The Road Warrior!";
      console.log("Your personality is: The Road Warrior!")
-    } if (ExtroversionScore >= 4) {
+    } else if (ExtroversionScore >= 4) {
         result.innerHTML = "Your personality is: The Networker!";
         console.log("Your personality is: The Networker!")
-    } if (AgreeablenessScore >= 4) {
+    } else if (AgreeablenessScore >= 4) {
         result.innerHTML = "Your personality is: The Problem Solver!";
         console.log("Your personality is: The Problem Solver!")
-    } else if (NeuroticismScore >= 4); {
+    } else if (NeuroticismScore >= 4) {
         result.innerHTML = "Your personality is: The Expressionist!";
         console.log("Your personality is: The Expressionist!")
         }
