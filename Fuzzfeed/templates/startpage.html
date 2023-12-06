@@ -2,22 +2,54 @@
 <html>
 <head>
     <link rel="stylesheet" href="/static/style.css">
+    <style>
+       
+        header {
+            text-align: center;
+        }
+
+        #me {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0; 
+            margin: 0; 
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
     <script src="/static/script.js"></script>
-    <!-- Your other styles -->
+    
 </head>
 <body>
     <header>
         <h1>Hi, welcome to Team AC's Personality Quiz!</h1>
         <img id="me" src="/static/images/christmas quiz.jpeg" alt="DESCRIPTION" width="450" height="470">
+        <nav>
+            <ul>
+                <li>
+                    <a href="questionone.html">Quiz page</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="questionone.html">Quiz page</a>
-            </li>
-        </ul>
-    </nav>
 
     <main>
         <p class="CS110">Click the 'Quiz Page' link to start answering questions! Discover which one of five personalities is yours!</p>
