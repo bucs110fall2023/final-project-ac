@@ -11,7 +11,7 @@ def index():
     return render_template('startpage.html')
 
 
-@app.route('/static/<path:filename>')
+@app.route('fuzzfeed/static/<path:filename>')
 def serve_static(filename):
     return send_from_directory('templates', filename)
 
@@ -25,4 +25,3 @@ def serve_page(filename):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
