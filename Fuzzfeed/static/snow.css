@@ -1,0 +1,22 @@
+
+/* Create a snowfall animation */
+.snowfall {
+    pointer-events: none; /* Prevents the snowfall from interfering with click events */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Ensure it's above other content */
+    background-image: url('/static/images/snowflakes.png'); /* Replace with your snowflake image */
+    animation: snowfall 10s linear infinite; /* Customize animation properties */
+}
+
+@keyframes snowfall {
+    from {
+        transform: translateY(-100vh); /* Start above the viewport */
+    }
+    to {
+        transform: translateY(100vh); /* End below the viewport */
+    }
+}
