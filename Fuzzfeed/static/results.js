@@ -202,7 +202,7 @@
  
    console.log("questionCount = " + questionCount + "\t" + "OpennessScore = " + OpennessScore); 
  
- if (questionCount == 3) { //PART 5
+ if (questionCount == 3) {
    console.log("The quiz is done!") 
  updateResult();
    }
@@ -230,7 +230,7 @@
   
     console.log("questionCount = " + questionCount + "\t" + "ExtroversionScore = " + ExtroversionScore); 
   
-  if (questionCount == 3) { //PART 5
+  if (questionCount == 3) {
     console.log("The quiz is done!") 
   updateResult();
     }
@@ -244,7 +244,7 @@
   
     console.log("questionCount = " + questionCount + "\t" + "AgreeablenessScore = " + AgreeablenessScore); 
   
-  if (questionCount == 3) { //PART 5
+  if (questionCount == 3) {
     console.log("The quiz is done!") 
   updateResult();
     }
@@ -258,7 +258,7 @@
   
     console.log("questionCount = " + questionCount + "\t" + "NeuroticismScore = " + NeuroticismScore); 
   
-  if (questionCount == 3) { //PART 5
+  if (questionCount == 3) {
     console.log("The quiz is done!") 
   updateResult();
     }
