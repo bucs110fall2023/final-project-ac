@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/static/results.js"></script>
+    <script src="/static/results.js" defer></script>
 </head>
 <body>
     <main>
@@ -11,10 +12,42 @@
     </main>
 
     <script>
-        
+        function calculateResult() {
+            const OpennessScore = parseInt(localStorage.getItem('OpennessScore')) || 0;
+            const ConscientiousnessScore = parseInt(localStorage.getItem('ConscientiousnessScore')) || 0;
+            const AgreeablenessScore = parseInt(localStorage.getItem('AgreeablenessScore')) || 0;
+            const ExtroversionScore = parseInt(localStorage.getItem('ExtroversionScore')) || 0;
+            const NeuroticismScore = parseInt(localStorage.getItem('NeuroticismScore')) || 0;
+
+            // Calculate the total score by summing up individual scores
+            const totalScore = OpennessScore + ConscientiousnessScore + AgreeablenessScore + ExtroversionScore + NeuroticismScore;
+
+            let finalResult = "";
+
+            // Logic to determine the personality based on the total score
+            if (totalScore >= 18) {
+                finalResult = "Your personality is: The Detective!";
+            } else if (totalScore >= 15) {
+                finalResult = "Your personality is: The Road Warrior!";
+            } else if (totalScore >= 10) {
+                finalResult = "Your personality is: The Networker!";
+            } else if (totalScore >= 6) {
+                finalResult = "Your personality is: The Problem Solver!";
+            } else {
+                finalResult = "Your personality is: The Expressionist!";
+            }
+
+            document.getElementById('result').innerHTML = finalResult;
+        }
+
         document.getElementById('restart').addEventListener('click', function() {
-            window.location.href = 'questionone.html';
+            localStorage.clear();
+            window.location.href = 'startpage.html';
         });
+
+        // Calculate the result when the page loads
+        calculateResult();
+
     </script>
     <style>
         h2  {
