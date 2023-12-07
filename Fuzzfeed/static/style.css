@@ -34,8 +34,6 @@ body {
   /* STYLE FLEX CONTAINER */
   .question {
     display: flex;
-    /* uncomment the next line to center the questions and answers */
-    /* justify-content: center; */
     margin-top: 2em;
   }
     
