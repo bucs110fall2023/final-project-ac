@@ -6,7 +6,7 @@
  var questionCount = 0; //store the number of questions clicked on
  
  ///////prof////////
-var next = document.querySelector('nav.ul.li.a')
+var next = document.getElementById("next")
 next.addEventListener('click', (e) => {
   e.preventDefault()
   fetch(`$(next.href)?`, OpennessScore, ConscientiousnessScore, ExtroversionScore, AgreeablenessScore, NeuroticismScore, questionCount)
@@ -66,7 +66,7 @@ next.addEventListener('click', (e) => {
 //  var q15a1 = document.getElementById("q15a1");
 //  var q15a2 = document.getElementById("q15a2");
 
-//  //listen for click on answer buttons and call function if clicked
+ 
 //  q1a1.addEventListener("click", Openness);
 //  q1a2.addEventListener("click", Conscientiousness);
 //  q1a3.addEventListener("click", Extroversion);
