@@ -1,67 +1,78 @@
-document.addEventListener('DOMContentLoaded', () => {
+// Load result text from external data file
+const resultsData = await fetch('results-text.json').then(res => res.json()); 
+
+try {
   // Initialize trait scores in localStorage if not present
   const traitScoresKey = 'traitScores';
   if (!localStorage.getItem(traitScoresKey)) {
-    const traitScores = {
+    const initialScores = {
       Openness: 0,
-      Conscientiousness: 0,
+      Conscientiousness: 0, 
       Extroversion: 0,
       Agreeableness: 0,
       Neuroticism: 0,
       questionCount: 0
     };
-    localStorage.setItem(traitScoresKey, JSON.stringify(traitScores));
+    localStorage.setItem(traitScoresKey, JSON.stringify(initialScores));
   }
 
-  function calculateResult() {
-    const storedTraitScores = JSON.parse(localStorage.getItem(traitScoresKey));
+  // Calculate final personality result
+  function calculatePersonalityResult() {
+    const scores = JSON.parse(localStorage.getItem(traitScoresKey));
+  
+    const totalScore = Object.values(scores).slice(0,5).reduce((a, b) => a + b, 0);
+    
+    let personalityResult = '';
 
-    const totalScore = storedTraitScores.Openness + storedTraitScores.Conscientiousness +
-        storedTraitScores.Extroversion + storedTraitScores.Agreeableness + storedTraitScores.Neuroticism;
-
-    let finalResult = "";
-
+    // Determine result text based on score thresholds
     if (totalScore >= 18) {
-      finalResult = "Your personality is: The Detective!";
+      personalityResult = resultsData.detective; 
     } else if (totalScore >= 15) {
-      finalResult = "Your personality is: The Road Warrior!";
+       personalityResult = resultsData.roadWarrior;
     } else if (totalScore >= 10) {
-      finalResult = "Your personality is: The Networker!";
+       personalityResult = resultsData.networker;
     } else if (totalScore >= 6) {
-      finalResult = "Your personality is: The Problem Solver!";
+       personalityResult = resultsData.problemSolver;
     } else {
-      finalResult = "Your personality is: The Expressionist!";
+       personalityResult = resultsData.expressionist;
     }
 
-    document.getElementById('result').innerHTML = finalResult;
+    document.getElementById('result').textContent = personalityResult;
   }
 
+  // Update trait score and question count
   function updateScore(trait, value) {
-    const storedTraitScores = JSON.parse(localStorage.getItem(traitScoresKey));
-    storedTraitScores[trait] += parseInt(value);
-    storedTraitScores.questionCount += 1;
-    localStorage.setItem(traitScoresKey, JSON.stringify(storedTraitScores));
+    const scores = JSON.parse(localStorage.getItem(traitScoresKey));
+    scores[trait] += parseInt(value); 
+    scores.questionCount++;
+    localStorage.setItem(traitScoresKey, JSON.stringify(scores));
   }
 
+  // Handle answer button click
   function handleAnswerClick(event) {
-    const answerValue = event.target.dataset.value;
-    const trait = event.target.closest('.question').dataset.trait;
-    updateScore(trait, answerValue);
-    event.target.parentElement.classList.add('answered');
+    const value = event.target.dataset.value;
+    const trait = event.closest('.question').dataset.trait;
+    updateScore(trait, value);
+    event.target.parentElement.classList.add('answered'); 
   }
 
-  const answerButtons = document.querySelectorAll('.answer-choice button');
-  answerButtons.forEach(button => {
+  // Attach click handler to answer buttons
+  document.querySelectorAll('.answer-choice button').forEach(button => {
     button.addEventListener('click', handleAnswerClick);
   });
 
+  // Calculate result when next is clicked
   document.getElementById('next').addEventListener('click', () => {
-    const allAnswered = document.querySelectorAll('.answer-choice:not(.answered)').length === 0;
-    if (allAnswered) {
-      calculateResult();
+    if (document.querySelectorAll('.answer-choice:not(.answered)').length === 0) {
+      calculatePersonalityResult();
     }
   });
 
-  // Call calculateResult when the page loads
-  calculateResult();
-});
+  // Initialize result
+  calculatePersonalityResult();
+
+} catch (err) {
+  // Gracefully handle errors
+  console.error(err);
+  document.getElementById('result').textContent = 'Unable to calculate result';
+}
