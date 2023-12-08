@@ -25,7 +25,7 @@ try {
     let personalityResult = '';
 
     // Determine result text based on score thresholds
-    if (totalScore >= 18) {
+    if (totalScore >= 15) {
       personalityResult = resultsData.detective; 
     } else if (totalScore >= 15) {
        personalityResult = resultsData.roadWarrior;
