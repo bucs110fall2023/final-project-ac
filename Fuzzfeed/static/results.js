@@ -1,8 +1,8 @@
-// Load result text from external data file
+
 const resultsData = await fetch('results-text.json').then(res => res.json()); 
 
 try {
-  // Initialize trait scores in localStorage if not present
+  
   const traitScoresKey = 'traitScores';
   if (!localStorage.getItem(traitScoresKey)) {
     const initialScores = {
@@ -16,7 +16,7 @@ try {
     localStorage.setItem(traitScoresKey, JSON.stringify(initialScores));
   }
 
-  // Calculate final personality result
+
   function calculatePersonalityResult() {
     const scores = JSON.parse(localStorage.getItem(traitScoresKey));
   
@@ -24,7 +24,7 @@ try {
     
     let personalityResult = '';
 
-    // Determine result text based on score thresholds
+  
     if (totalScore >= 15) {
       personalityResult = resultsData.detective; 
     } else if (totalScore >= 15) {
@@ -37,10 +37,10 @@ try {
        personalityResult = resultsData.expressionist;
     }
 
-    document.getElementById('result').textContent = personalityResult;
+    document.getElementById('result').value = personalityResult;
   }
 
-  // Update trait score and question count
+
   function updateScore(trait, value) {
     const scores = JSON.parse(localStorage.getItem(traitScoresKey));
     scores[trait] += parseInt(value); 
@@ -48,7 +48,7 @@ try {
     localStorage.setItem(traitScoresKey, JSON.stringify(scores));
   }
 
-  // Handle answer button click
+
   function handleAnswerClick(event) {
     const value = event.target.dataset.value;
     const trait = event.closest('.question').dataset.trait;
@@ -56,23 +56,23 @@ try {
     event.target.parentElement.classList.add('answered'); 
   }
 
-  // Attach click handler to answer buttons
+  
   document.querySelectorAll('.answer-choice button').forEach(button => {
     button.addEventListener('click', handleAnswerClick);
   });
 
-  // Calculate result when next is clicked
+  
   document.getElementById('next').addEventListener('click', () => {
     if (document.querySelectorAll('.answer-choice:not(.answered)').length === 0) {
       calculatePersonalityResult();
     }
   });
 
-  // Initialize result
+
   calculatePersonalityResult();
 
 } catch (err) {
-  // Gracefully handle errors
+
   console.error(err);
   document.getElementById('result').textContent = 'Unable to calculate result';
 }
