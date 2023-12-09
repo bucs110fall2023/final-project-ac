@@ -26,15 +26,15 @@
 
             // Logic to determine the personality based on the total score
             if (totalScore >= 18) {
-                finalResult = "Your personality is: The Detective!";
+                finalResult = "Your personality is: The Detective! According to HR Dive.com, Detective types 'enjoy searching for knowledge and sharing solutions with others, are organized, driven by a sense of purpose and job security, and prefer face-to-face communication.'";
             } else if (totalScore >= 15) {
-                finalResult = "Your personality is: The Road Warrior!";
+                finalResult = "Your personality is: The Road Warrior! According to HR Dive.com, Road Warriors 'often work from different locations and different times, are outgoing, driven by flexibility and enjoy creating connections with colleagues virtually.'";
             } else if (totalScore >= 10) {
-                finalResult = "Your personality is: The Networker!";
+                finalResult = "Your personality is: The Networker! According to HR Dive.com, Networkers 'are the best communicators and collaborators, are driven by relationships with colleagues and prefer being co-located with their team.'";
             } else if (totalScore >= 6) {
-                finalResult = "Your personality is: The Problem Solver!";
+                finalResult = "Your personality is: The Problem Solver! According to HR Dive.com, Problem Solvers 'dislike repetitive tasks, enjoy automation, sharing tips and tricks with their colleagues and exploring the potential of AI tools.'";
             } else {
-                finalResult = "Your personality is: The Expressionist!";
+                finalResult = "Your personality is: The Expressionist! According to HR Dive.com, Expressionists 'prefer visual and less formal communication such as emojis and memes, enjoy being fun and lighthearted at work.'";
             }
 
             document.getElementById('result').innerHTML = finalResult;
